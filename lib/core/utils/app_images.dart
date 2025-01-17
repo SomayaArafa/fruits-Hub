@@ -7,7 +7,7 @@ class Assets {
 
   /// Assets for imagesApplIcon
   /// assets/images/appl_icon.svg
-  static const String imagesApplIcon = "assets/images/appl_icon.svg";
+  static const String imagesApplIcon = "assets/images/appleicon.svg";
 
   /// Assets for imagesCheck
   /// assets/images/Check.svg
@@ -19,7 +19,7 @@ class Assets {
 
   /// Assets for imagesFacebookIcon
   /// assets/images/facebook_icon.svg
-  static const String imagesFacebookIcon = "assets/images/facebook_icon.svg";
+  static const String imagesFacebookIcon = "assets/images/facebookicon.svg";
 
   /// Assets for imagesFeaturedItemBackground
   /// assets/images/featured_item_background.svg
@@ -36,7 +36,7 @@ class Assets {
 
   /// Assets for imagesGoogleIcon
   /// assets/images/google_icon.svg
-  static const String imagesGoogleIcon = "assets/images/google_icon.svg";
+  static const String imagesGoogleIcon = "assets/images/googleicon.svg";
 
   /// Assets for imagesLocation
   /// assets/images/location.svg

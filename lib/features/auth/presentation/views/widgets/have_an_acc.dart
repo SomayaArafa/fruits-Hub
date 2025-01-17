@@ -1,12 +1,12 @@
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:lastfruitapp/features/auth/presentation/views/signup_view.dart';
+import 'package:lastfruitapp/features/auth/presentation/views/login_view.dart';
 
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
-class DontHaveAnAccWidget extends StatelessWidget {
-  const DontHaveAnAccWidget({
+import '../signup_view.dart';
+class HaveAnAcc extends StatelessWidget {
+  const HaveAnAcc({
     super.key,
   });
 
@@ -16,16 +16,17 @@ class DontHaveAnAccWidget extends StatelessWidget {
         TextSpan(
             children: [
               TextSpan(
-                text:'لا تمتلك حساب ؟',
+                text:'تمتلك حساب بالفعل؟',
                 style:TextStyles.semiBold16.copyWith(color:const Color(0xff616A6B)),
               ),
               TextSpan(recognizer: TapGestureRecognizer()..onTap=(){
-                Navigator.pushNamed(context, SignupView.routeName);
+                Navigator.pop(context);
               },
-                  text: 'قم بانشاء حساب',
+                  text: 'تسجيل دخول',
                   style: TextStyles.semiBold16.copyWith(color: AppColors.primaryColor)
               )
             ]
         ));
   }
 }
+

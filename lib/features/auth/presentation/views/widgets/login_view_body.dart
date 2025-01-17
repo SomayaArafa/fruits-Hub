@@ -5,7 +5,9 @@ import 'package:lastfruitapp/core/utils/app_colors.dart';
 import 'package:lastfruitapp/core/wigets/custom_button.dart';
 import 'package:lastfruitapp/core/wigets/custom_text_form_field.dart';
 import 'package:lastfruitapp/features/auth/presentation/views/widgets/or_divider.dart';
+import 'package:lastfruitapp/features/auth/presentation/views/widgets/social_login_button.dart';
 
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 import 'dont_have_anacc_widget.dart';
 
@@ -37,24 +39,62 @@ class LoginViewBody extends StatelessWidget {
                 color: Color(0xffC9CECF),
               ),
             ),
-            const SizedBox(height: 16,),
-            Row(mainAxisAlignment: MainAxisAlignment.end,
+            const SizedBox(
+              height: 16,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Text('نسيت كلمة المرور؟', style: TextStyles.semiBold13.copyWith(
-                  color: AppColors.lightPrimaryColor,
-                ),),
+                Text(
+                  'نسيت كلمة المرور؟',
+                  style: TextStyles.semiBold13.copyWith(
+                    color: AppColors.lightPrimaryColor,
+                  ),
+                ),
               ],
             ),
-            const SizedBox(height: 33,),
+            const SizedBox(
+              height: 33,
+            ),
             CustomButton(onPressed: () {}, text: 'تسجيل دخول'),
-            const SizedBox(height:33 ,),
+            const SizedBox(
+              height: 33,
+            ),
             const DontHaveAnAccWidget(),
-            const SizedBox(height: 33,),
+            const SizedBox(
+              height: 33,
+            ),
             const OrDivider(),
+            const SizedBox(
+              height: 16,
+            ),
+             SocialLoginButton(
+              image: Assets.imagesGoogleIcon,
+              title: 'تسجيل بواسطة جوجل',
+              onPressed: () {},
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            SocialLoginButton(
+              image: Assets.imagesApplIcon,
+              title: 'تسجيل بواسطة أبل',
+              onPressed: () {},
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            SocialLoginButton(
+              image: Assets.imagesFacebookIcon,
+              title: 'تسجيل بواسطة فيسبوك',
+              onPressed: () {},
+            ),
+            const SizedBox(
+              height: 16,
+            ),
           ],
         ),
       ),
     );
   }
 }
-

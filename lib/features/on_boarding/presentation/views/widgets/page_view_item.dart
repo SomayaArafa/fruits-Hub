@@ -46,7 +46,7 @@ final bool isVisible;
                     Navigator.of(context).pushReplacementNamed(LoginView.routeName);
                   } ,
                     child: Padding(
-                      padding: EdgeInsets.all(16),
+                      padding: const EdgeInsets.all(16),
                       child: Text('تخط',style: TextStyles.regular13.copyWith(color: const Color(0xFF949D9E)),),
                     ),
                   ),
